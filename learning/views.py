@@ -24,7 +24,7 @@ def topics(request):
         {
             'title': 'Travel',
             'description': 'Learn essential phrases for your next adventure.',
-            'image': 'https://source.unsplash.com/random/800x600?travel',
+            'image': 'static/img/travel.png',
             'level': 'Beginner'
         },
         {
