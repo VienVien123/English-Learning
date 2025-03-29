@@ -10,6 +10,8 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Word
 from .serializers import WordSerializer, TopicSerializer
+from django.views.decorators.http import require_http_methods
+import json
 
 class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)
@@ -85,16 +87,54 @@ def add_topic(request):
     return JsonResponse({'status': 'error'}, status=400)
 
 @login_required
+def get_topics(request):
+    topics = Topic.objects.all()
+    topics_data = [{'id': topic.id, 'name': topic.name} for topic in topics]
+    return JsonResponse(topics_data, safe=False)
+
+@login_required
+def get_words(request):
+    words = Word.objects.filter(user=request.user)
+    words_data = [{
+        'id': word.id,
+        'word': word.word,
+        'definition': word.definition,
+        'example': word.example,
+        'topic': word.topic.id if word.topic else None,
+        'topic_name': word.topic.name if word.topic else None,
+        'is_learned': word.is_learned
+    } for word in words]
+    return JsonResponse(words_data, safe=False)
+
+@login_required
+@require_http_methods(['POST'])
 def add_word(request):
-    if request.method == 'POST':
-        word = request.POST.get('word')
-        definition = request.POST.get('definition')
-        example = request.POST.get('example')
-        topic_id = request.POST.get('topic')
-        topic = Topic.objects.get(id=topic_id)
-        Word.objects.create(word=word, definition=definition, example=example, topic=topic, user=request.user)
-        return JsonResponse({'status': 'success'})
-    return JsonResponse({'status': 'error'}, status=400)
+    try:
+        data = json.loads(request.body)
+        # Create word object
+        word = Word.objects.create(
+            user=request.user,
+            word=data['word'],
+            definition=data['definition'],
+            example=data.get('example', ''),
+            topic=Topic.objects.get(id=data['topic']) if data.get('topic') else None
+        )
+        
+        # Return word data
+        return JsonResponse({
+            'id': word.id,
+            'word': word.word,
+            'definition': word.definition,
+            'example': word.example,
+            'topic': word.topic.id if word.topic else None,
+            'topic_name': word.topic.name if word.topic else None,
+            'is_learned': word.is_learned
+        })
+    except Topic.DoesNotExist:
+        return JsonResponse({'error': 'Topic not found'}, status=400)
+    except Exception as e:
+        print(f"Error adding word: {str(e)}")  # Debug log
+        return JsonResponse({'error': str(e)}, status=400)
 
 @login_required
 def edit_word(request, word_id):

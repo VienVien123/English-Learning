@@ -21,7 +21,7 @@ class Word(models.Model):
     example = models.TextField(blank=True)
     category = models.CharField(max_length=100,null=True, blank=True)
 
-    topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True, blank=True, related_name='words')
+    # topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True, blank=True, related_name='words')
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     is_learned = models.BooleanField(default=False)
