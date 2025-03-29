@@ -7,9 +7,9 @@ from django import forms
 from .models import Topic, Word
 from django.http import JsonResponse
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Word
-from .serializers import WorkSerializer
+from .serializers import WordSerializer, TopicSerializer
 
 class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)
@@ -135,3 +135,22 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'registration/register.html', {'form': form})
+
+# API CRUD
+class TopicViewSet(ModelViewSet):
+    queryset = Topic.objects.all()
+    serializer_class = TopicSerializer
+    permission_classes = [AllowAny]  # Ai cũng có thể xem chủ đề
+
+    def get_queryset(self):
+        return Topic.objects.all()
+    
+class WordViewSet(ModelViewSet):
+    serializer_class = WordSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        return Word.objects.filter(user=self.request.user)
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)

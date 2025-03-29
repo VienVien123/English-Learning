@@ -1,7 +1,19 @@
 from django.urls import path
 from . import views
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import TopicViewSet, WordViewSet
+
+router = DefaultRouter()
+router.register(r'topics', views.TopicViewSet,basename='topics')
+router.register(r'words', views.WordViewSet,basename='words')
+
+
 
 urlpatterns = [
+    # api
+    path('api/', include(router.urls)),
+    # web
     path('', views.home, name='home'),
     path('login/', views.login_view, name='login'),
     path('logout/', views.logout_view, name='logout'),
