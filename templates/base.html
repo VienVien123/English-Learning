@@ -31,7 +31,7 @@
                         <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#vocabulary">Vocabulary</a>
+                        <a class="nav-link" href="{% url 'vocabulary' %}">Vocabulary</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#grammar">Grammar</a>
@@ -82,6 +82,7 @@
     <!-- Main Content -->
     <main class="mt-5 pt-5">
         {% block content %}{% endblock %}
+        {% block home %}{% endblock home %}
     </main>
 
     <!-- Footer -->
@@ -95,7 +96,7 @@
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#vocabulary">Vocabulary</a></li>
+                        <li><a href="{% url 'vocabulary' %}">Vocabulary</a></li>
                         <li><a href="#grammar">Grammar</a></li>
                         <li><a href="#listening">Listening</a></li>
                         <li><a href="#exercises">Exercises</a></li>

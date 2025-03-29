@@ -61,12 +61,18 @@
         <h2 class="text-center mb-5">Popular Learning Topics</h2>
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="topic-card" style="background-image: url('https://source.unsplash.com/random/800x600?travel')">
+                {% comment %} <div class="topic-card" style="background-image: url('https://source.unsplash.com/random/800x600?travel')">
                     <div class="topic-card-content">
                         <h3>Travel</h3>
                         <p>Learn essential phrases for your next adventure.</p>
                     </div>
-                </div>
+                </div> {% endcomment %}
+                <div class="topic-card" style="background-image: url('{% static 'img/travel.png' %}')">
+                    <div class="topic-card-content">
+                        <h3>Travel</h3>
+                        <p>Learn essential phrases for your next adventure.</p>
+                    </div>
+                </div>                
             </div>
             <div class="col-md-4">
                 <div class="topic-card" style="background-image: url('https://source.unsplash.com/random/800x600?business')">

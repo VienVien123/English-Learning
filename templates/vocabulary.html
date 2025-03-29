@@ -1,0 +1,295 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs mb-4" id="vocabularyTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="my-vocab-tab" data-bs-toggle="tab" data-bs-target="#my-vocab" type="button" role="tab">
+                Từ vựng của tôi
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="topics-tab" data-bs-toggle="tab" data-bs-target="#topics" type="button" role="tab">
+                Học theo chủ đề
+            </button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="vocabularyTabContent">
+        <!-- My Vocabulary Tab -->
+        <div class="tab-pane fade show active" id="my-vocab" role="tabpanel">
+            {% if user.is_authenticated %}
+                <!-- Add Word Button -->
+                <div class="mb-4">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addWordModal">
+                        <i class="fas fa-plus"></i> Thêm từ mới
+                    </button>
+                </div>
+
+                <!-- My Words Grid -->
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="myWordsGrid">
+                    {% for word in my_words %}
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ word.word }}</h5>
+                                <p class="card-text">{{ word.definition }}</p>
+                                <p class="card-text"><small class="text-muted">Chủ đề: {{ word.topic.name }}</small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <form method="post" action="{% url 'mark_word_learned' word.id %}" class="d-inline">
+                                        {% csrf_token %}
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" 
+                                                   onchange="this.form.submit()"
+                                                   {% if word.is_learned %}checked{% endif %}>
+                                            <label class="form-check-label">Đã học</label>
+                                        </div>
+                                    </form>
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm btn-outline-primary edit-word" 
+                                                data-word-id="{{ word.id }}"
+                                                data-bs-toggle="modal" 
+                                                data-bs-target="#editWordModal">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger delete-word" 
+                                                data-word-id="{{ word.id }}"
+                                                data-bs-toggle="modal" 
+                                                data-bs-target="#deleteWordModal">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="col-12">
+                        <div class="alert alert-info">
+                            Bạn chưa có từ vựng nào. Hãy thêm từ mới!
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="alert alert-warning">
+                    <h4 class="alert-heading">Yêu cầu đăng nhập!</h4>
+                    <p>Vui lòng đăng nhập hoặc đăng ký để sử dụng chức năng này.</p>
+                    <hr>
+                    <p class="mb-0">
+                        <a href="{% url 'login' %}" class="btn btn-primary me-2">Đăng nhập</a>
+                        <a href="{% url 'register' %}" class="btn btn-outline-primary">Đăng ký</a>
+                    </p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Topics Tab -->
+        <div class="tab-pane fade" id="topics" role="tabpanel">
+            <!-- Topics Grid -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {% for topic in topics %}
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ topic.name }}</h5>
+                            <p class="card-text">{{ topic.description }}</p>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    {{ topic.words.count }} từ vựng
+                                </small>
+                            </p>
+                            <button class="btn btn-primary view-topic" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#topicWordsModal"
+                                    data-topic-id="{{ topic.id }}">
+                                Xem từ vựng
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="alert alert-info">
+                        Chưa có chủ đề nào.
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Topic Words Modal -->
+            <div class="modal fade" id="topicWordsModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Từ vựng theo chủ đề</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row row-cols-1 row-cols-md-2 g-4" id="topicWordsGrid">
+                                <!-- Words will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Word Modal -->
+<div class="modal fade" id="addWordModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thêm từ mới</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="{% url 'add_word' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="word" class="form-label">Từ vựng</label>
+                        <input type="text" class="form-control" id="word" name="word" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="definition" class="form-label">Định nghĩa</label>
+                        <textarea class="form-control" id="definition" name="definition" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="example" class="form-label">Ví dụ</label>
+                        <textarea class="form-control" id="example" name="example" rows="2"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="topic" class="form-label">Chủ đề</label>
+                        <select class="form-select" id="topic" name="topic" required>
+                            <option value="">Chọn chủ đề</option>
+                            {% for topic in topics %}
+                            <option value="{{ topic.id }}">{{ topic.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Word Modal -->
+<div class="modal fade" id="editWordModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sửa từ vựng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="editWordForm">
+                    {% csrf_token %}
+                    <input type="hidden" id="editWordId" name="word_id">
+                    <div class="mb-3">
+                        <label for="editWord" class="form-label">Từ vựng</label>
+                        <input type="text" class="form-control" id="editWord" name="word" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editDefinition" class="form-label">Định nghĩa</label>
+                        <textarea class="form-control" id="editDefinition" name="definition" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editExample" class="form-label">Ví dụ</label>
+                        <textarea class="form-control" id="editExample" name="example" rows="2"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editTopic" class="form-label">Chủ đề</label>
+                        <select class="form-select" id="editTopic" name="topic" required>
+                            <option value="">Chọn chủ đề</option>
+                            {% for topic in topics %}
+                            <option value="{{ topic.id }}">{{ topic.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn btn-primary">Cập nhật</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Word Modal -->
+<div class="modal fade" id="deleteWordModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Xác nhận xóa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa từ vựng này?</p>
+                <form method="post" id="deleteWordForm">
+                    {% csrf_token %}
+                    <input type="hidden" id="deleteWordId" name="word_id">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Edit Word
+    document.querySelectorAll('.edit-word').forEach(button => {
+        button.addEventListener('click', function() {
+            const wordId = this.dataset.wordId;
+            const card = this.closest('.card');
+            const form = document.getElementById('editWordForm');
+            
+            form.action = `/vocabulary/edit-word/${wordId}/`;
+            document.getElementById('editWordId').value = wordId;
+            document.getElementById('editWord').value = card.querySelector('.card-title').textContent;
+            document.getElementById('editDefinition').value = card.querySelector('.card-text').textContent;
+            document.getElementById('editTopic').value = card.querySelector('.text-muted').textContent.split(': ')[1];
+        });
+    });
+
+    // Delete Word
+    document.querySelectorAll('.delete-word').forEach(button => {
+        button.addEventListener('click', function() {
+            const wordId = this.dataset.wordId;
+            const form = document.getElementById('deleteWordForm');
+            form.action = `/vocabulary/delete-word/${wordId}/`;
+        });
+    });
+
+    // View Topic Words
+    document.querySelectorAll('.view-topic').forEach(button => {
+        button.addEventListener('click', function() {
+            const topicId = this.dataset.topicId;
+            const grid = document.getElementById('topicWordsGrid');
+            
+            // Load words for the selected topic
+            fetch(`/topics/${topicId}/words/`)
+            .then(response => response.text())
+            .then(html => {
+                grid.innerHTML = html;
+            });
+        });
+    });
+});
+</script>
+{% endblock %} 
