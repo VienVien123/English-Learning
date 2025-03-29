@@ -6,6 +6,10 @@ from django.contrib.auth.decorators import login_required
 from django import forms
 from .models import Topic, Word
 from django.http import JsonResponse
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.permissions import IsAuthenticated
+from .models import Word
+from .serializers import WorkSerializer
 
 class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)

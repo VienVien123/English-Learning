@@ -19,7 +19,8 @@ class Word(models.Model):
     word = models.CharField(max_length=100)
     definition = models.TextField()
     example = models.TextField(blank=True)
-    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name='words')
+    category = models.CharField(max_length=100,null=True, blank=True)
+    # topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name='words')
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     is_learned = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -30,3 +31,4 @@ class Word(models.Model):
 
     class Meta:
         ordering = ['word']
+
