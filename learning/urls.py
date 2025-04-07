@@ -8,11 +8,10 @@ router = DefaultRouter()
 router.register(r'topics', views.TopicViewSet,basename='topics')
 router.register(r'words', views.WordViewSet,basename='words')
 
-
-
 urlpatterns = [
     # api
     path('api/', include(router.urls)),
+    path('api/auth/status/', views.check_auth_status, name='check_auth_status'),
     # web
     path('', views.home, name='home'),
     path('login/', views.login_view, name='login'),

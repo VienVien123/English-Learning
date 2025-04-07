@@ -43,9 +43,10 @@ def login_view(request):
         if user is not None:
             login(request, user)
             messages.success(request, 'Successfully logged in!')
-            return redirect('home')
+            return JsonResponse({'status': 'success', 'message': 'Successfully logged in!'})
         else:
             messages.error(request, 'Invalid username or password.')
+            return JsonResponse({'status': 'error', 'message': 'Invalid username or password.'}, status=401)
     return render(request, 'login.html')
 
 def register_view(request):
@@ -58,9 +59,10 @@ def register_view(request):
             user = form.save()
             login(request, user)
             messages.success(request, 'Account created successfully!')
-            return redirect('home')
+            return JsonResponse({'status': 'success', 'message': 'Account created successfully!'})
         else:
-            messages.error(request, 'Please correct the errors below.')
+            errors = {field: str(error[0]) for field, error in form.errors.items()}
+            return JsonResponse({'status': 'error', 'errors': errors}, status=400)
     else:
         form = CustomUserCreationForm()
     return render(request, 'register.html', {'form': form})
@@ -68,7 +70,7 @@ def register_view(request):
 def logout_view(request):
     logout(request)
     messages.success(request, 'Successfully logged out!')
-    return redirect('home')
+    return JsonResponse({'status': 'success', 'message': 'Successfully logged out!'})
 
 def vocabulary(request):
     topics = Topic.objects.all()
@@ -109,6 +111,7 @@ def get_words(request):
 @login_required
 @require_http_methods(['POST'])
 def add_word(request):
+    print('================'*30)
     try:
         data = json.loads(request.body)
         # Create word object
@@ -119,7 +122,8 @@ def add_word(request):
             example=data.get('example', ''),
             topic=Topic.objects.get(id=data['topic']) if data.get('topic') else None
         )
-        
+        print('================'*30)
+        print (word)
         # Return word data
         return JsonResponse({
             'id': word.id,
@@ -194,3 +198,13 @@ class WordViewSet(ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+
+@login_required
+def check_auth_status(request):
+    return JsonResponse({
+        'isAuthenticated': True,
+        'user': {
+            'username': request.user.username,
+            'email': request.user.email
+        }
+    })
