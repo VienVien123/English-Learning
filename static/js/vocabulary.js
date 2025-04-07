@@ -174,18 +174,49 @@ function addEventListeners() {
             const wordData = {
                 word: formData.get('word'),
                 definition: formData.get('definition'),
-                example: formData.get('example'),
-                topic: formData.get('topic')
+                example: formData.get('example') || '',
+                topic: formData.get('topic') || null
             };
 
             try {
-                const newWord = await addWord(wordData);
+                console.log('Sending word data:', wordData); // Debug log
+                const response = await fetch('/vocabulary/add-word/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCookie('csrftoken')
+                    },
+                    body: JSON.stringify(wordData)
+                });
+
+                console.log('Response status:', response.status); // Debug log
+                const responseText = await response.text(); // Get raw response text
+                console.log('Response text:', responseText); // Debug log
+
+                if (!response.ok) {
+                    throw new Error(`Failed to add word: ${responseText}`);
+                }
+
+                let newWord;
+                try {
+                    newWord = JSON.parse(responseText); // Try to parse as JSON
+                } catch (e) {
+                    console.error('Error parsing response:', e);
+                    throw new Error('Invalid response format');
+                }
+
                 const wordGrid = document.getElementById('wordGrid');
                 wordGrid.insertAdjacentHTML('afterbegin', createWordCard(newWord));
-                bootstrap.Modal.getInstance(document.getElementById('addWordModal')).hide();
+                
+                // Close modal and reset form
+                const modal = bootstrap.Modal.getInstance(document.getElementById('addWordModal'));
+                if (modal) {
+                    modal.hide();
+                }
                 addWordForm.reset();
             } catch (error) {
-                alert('Error adding word');
+                console.error('Error adding word:', error);
+                alert(`Error adding word: ${error.message}`);
             }
         });
     }
@@ -200,17 +231,48 @@ function addEventListeners() {
             const wordData = {
                 word: formData.get('word'),
                 definition: formData.get('definition'),
-                example: formData.get('example'),
-                topic: formData.get('topic')
+                example: formData.get('example') || '',
+                topic: formData.get('topic') || null
             };
 
             try {
-                const updatedWord = await updateWord(wordId, wordData);
+                console.log('Sending update data:', wordData); // Debug log
+                const response = await fetch(`/vocabulary/edit-word/${wordId}/`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCookie('csrftoken')
+                    },
+                    body: JSON.stringify(wordData)
+                });
+
+                console.log('Response status:', response.status); // Debug log
+                const responseText = await response.text(); // Get raw response text
+                console.log('Response text:', responseText); // Debug log
+
+                if (!response.ok) {
+                    throw new Error(`Failed to update word: ${responseText}`);
+                }
+
+                let updatedWord;
+                try {
+                    updatedWord = JSON.parse(responseText); // Try to parse as JSON
+                } catch (e) {
+                    console.error('Error parsing response:', e);
+                    throw new Error('Invalid response format');
+                }
+
                 const wordCard = document.querySelector(`[data-word-id="${wordId}"]`).closest('.col-md-4');
                 wordCard.outerHTML = createWordCard(updatedWord);
-                bootstrap.Modal.getInstance(document.getElementById('editWordModal')).hide();
+                
+                // Close modal
+                const modal = bootstrap.Modal.getInstance(document.getElementById('editWordModal'));
+                if (modal) {
+                    modal.hide();
+                }
             } catch (error) {
-                alert('Error updating word');
+                console.error('Error updating word:', error);
+                alert(`Error updating word: ${error.message}`);
             }
         });
     }
@@ -221,12 +283,27 @@ function addEventListeners() {
             if (confirm('Are you sure you want to delete this word?')) {
                 const wordId = button.dataset.wordId;
                 try {
-                    const success = await deleteWord(wordId);
-                    if (success) {
-                        button.closest('.col-md-4').remove();
+                    console.log('Deleting word:', wordId); // Debug log
+                    const response = await fetch(`/vocabulary/delete-word/${wordId}/`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': getCookie('csrftoken')
+                        }
+                    });
+
+                    console.log('Response status:', response.status); // Debug log
+                    const responseText = await response.text(); // Get raw response text
+                    console.log('Response text:', responseText); // Debug log
+
+                    if (!response.ok) {
+                        throw new Error(`Failed to delete word: ${responseText}`);
                     }
+
+                    button.closest('.col-md-4').remove();
                 } catch (error) {
-                    alert('Error deleting word');
+                    console.error('Error deleting word:', error);
+                    alert(`Error deleting word: ${error.message}`);
                 }
             }
         });
@@ -237,11 +314,42 @@ function addEventListeners() {
         button.addEventListener('click', async () => {
             const wordId = button.dataset.wordId;
             try {
-                const updatedWord = await markWordLearned(wordId);
+                console.log('Marking word as learned:', wordId); // Debug log
+                const response = await fetch(`/vocabulary/mark-word-learned/${wordId}/`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCookie('csrftoken')
+                    }
+                });
+
+                console.log('Response status:', response.status); // Debug log
+                const responseText = await response.text(); // Get raw response text
+                console.log('Response text:', responseText); // Debug log
+
+                if (!response.ok) {
+                    throw new Error(`Failed to update word status: ${responseText}`);
+                }
+
+                let data;
+                try {
+                    data = JSON.parse(responseText); // Try to parse as JSON
+                } catch (e) {
+                    console.error('Error parsing response:', e);
+                    throw new Error('Invalid response format');
+                }
+
                 const wordCard = button.closest('.col-md-4');
-                wordCard.outerHTML = createWordCard(updatedWord);
+                if (data.is_learned) {
+                    wordCard.classList.add('learned');
+                    button.textContent = 'Learned';
+                } else {
+                    wordCard.classList.remove('learned');
+                    button.textContent = 'Mark as Learned';
+                }
             } catch (error) {
-                alert('Error marking word as learned');
+                console.error('Error updating word status:', error);
+                alert(`Error marking word as learned: ${error.message}`);
             }
         });
     });

@@ -149,8 +149,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <form method="post" action="{% url 'add_word' %}">
-                {% comment %} <form id="addWordForm">  {% endcomment %}
+                {% comment %} <form method="post" action="{% url 'add_word' %}">  {% endcomment %}
+                <form id="addWordForm"> 
                     {% csrf_token %}
                     <div class="mb-3">
                         <label for="word" class="form-label">Từ vựng</label>
