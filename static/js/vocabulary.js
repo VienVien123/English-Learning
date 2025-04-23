@@ -6,9 +6,7 @@ const API_URL = '/api';
 // Get all topics
 async function getTopics() {
     try {
-        const response = await fetch(`${API_URL}/topics/`, {
-            credentials: 'include'
-        });
+        const response = await fetch(`${API_URL}/topics/`);
         const data = await response.json();
         return data;
     } catch (error) {
@@ -17,31 +15,11 @@ async function getTopics() {
     }
 }
 
-// Add a new topic
-async function addTopic(topicData) {
-    try {
-        const response = await fetch(`${API_URL}/topics/`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': getCookie('csrftoken')
-            },
-            body: JSON.stringify(topicData),
-            credentials: 'include'
-        });
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error adding topic:', error);
-        throw error;
-    }
-}
-
 // Get all words
 async function getWords() {
     try {
         const response = await fetch(`${API_URL}/words/`, {
-            credentials: 'include'
+            headers: getAuthHeaders()
         });
         const data = await response.json();
         return data;
@@ -51,17 +29,13 @@ async function getWords() {
     }
 }
 
-// Add a new word
+// Add new word
 async function addWord(wordData) {
     try {
         const response = await fetch(`${API_URL}/words/`, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': getCookie('csrftoken')
-            },
-            body: JSON.stringify(wordData),
-            credentials: 'include'
+            headers: getAuthHeaders(),
+            body: JSON.stringify(wordData)
         });
         const data = await response.json();
         return data;
@@ -71,17 +45,13 @@ async function addWord(wordData) {
     }
 }
 
-// Update a word
+// Update word
 async function updateWord(wordId, wordData) {
     try {
         const response = await fetch(`${API_URL}/words/${wordId}/`, {
             method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': getCookie('csrftoken')
-            },
-            body: JSON.stringify(wordData),
-            credentials: 'include'
+            headers: getAuthHeaders(),
+            body: JSON.stringify(wordData)
         });
         const data = await response.json();
         return data;
@@ -91,39 +61,34 @@ async function updateWord(wordId, wordData) {
     }
 }
 
-// Delete a word
+// Delete word
 async function deleteWord(wordId) {
     try {
         const response = await fetch(`${API_URL}/words/${wordId}/`, {
             method: 'DELETE',
-            headers: {
-                'X-CSRFToken': getCookie('csrftoken')
-            },
-            credentials: 'include'
+            headers: getAuthHeaders()
         });
-        if (!response.ok) {
-            throw new Error('Failed to delete word');
-        }
+        return response.ok;
     } catch (error) {
         console.error('Error deleting word:', error);
         throw error;
     }
 }
 
-// Helper function to get CSRF token from cookies
-function getCookie(name) {
-    let cookieValue = null;
-    if (document.cookie && document.cookie !== '') {
-        const cookies = document.cookie.split(';');
-        for (let i = 0; i < cookies.length; i++) {
-            const cookie = cookies[i].trim();
-            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                break;
-            }
-        }
+// Mark word as learned
+async function markWordLearned(wordId) {
+    try {
+        const response = await fetch(`${API_URL}/words/${wordId}/`, {
+            method: 'PATCH',
+            headers: getAuthHeaders(),
+            body: JSON.stringify({ is_learned: true })
+        });
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error marking word as learned:', error);
+        throw error;
     }
-    return cookieValue;
 }
 
 // Create word card HTML
@@ -391,14 +356,4 @@ function addEventListeners() {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', initVocabularyPage);
-
-// Export functions
-export {
-    getTopics,
-    addTopic,
-    getWords,
-    addWord,
-    updateWord,
-    deleteWord
-}; 
+document.addEventListener('DOMContentLoaded', initVocabularyPage); 

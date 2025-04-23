@@ -1,0 +1,2277 @@
+[
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Birth",
+        "IPA": "/bɜrθ/",
+        "Type": "n",
+        "Vietnamese": "Sự sinh ra, sự chào đời"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Brother",
+        "IPA": "/ˈbrʌðər/",
+        "Type": "n",
+        "Vietnamese": "Anh/em trai"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Brother-in-law",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "anh/em rể"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Close",
+        "IPA": "/kloʊs/",
+        "Type": "adj",
+        "Vietnamese": "Gần gũi, gắn bó"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Cousin",
+        "IPA": "/ˈkʌzən/",
+        "Type": "n",
+        "Vietnamese": "Anh chị em họ"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Daughter",
+        "IPA": "/ˈdɔtər/",
+        "Type": "n",
+        "Vietnamese": "Con gái"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Daughter-in-law",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "con dâu"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Father",
+        "IPA": "/ˈfɑðər/",
+        "Type": "n",
+        "Vietnamese": "Cha/Bố"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Father-in-law",
+        "IPA": "",
+        "Type": "n",
+        "Vietnamese": "bố chồng/bố vợ"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Godmother",
+        "IPA": "/ˈɡɑːdmʌðər/",
+        "Type": "n",
+        "Vietnamese": "mẹ đỡ đầu"
+    },
+    {
+        "Topic": "chủ đề gia đình",
+        "English": "Grandparents",
+        "IPA": "/ˈgrændˌpɛrənts/",
+        "Type": "n",
+        "Vietnamese": "Ông bà"
+    },
+    {
+        "Topic": "3.2. Từ vựng về thời tiết",
+        "English": "Shower",
+        "IPA": "/ˈʃaʊər/",
+        "Type": "n",
+        "Vietnamese": "mưa rào"
+    },
+    {
+        "Topic": "3.2. Từ vựng về thời tiết",
+        "English": "Tornado",
+        "IPA": "/tɔːrˈneɪdoʊ/",
+        "Type": "n",
+        "Vietnamese": "lốc một cơn gió cực mạnh xoáy tròn trong một khu vực nhỏ; xoay tròn theo cột không khí"
+    },
+    {
+        "Topic": "3.2. Từ vựng về thời tiết",
+        "English": "Storm",
+        "IPA": "/stɔːrm/",
+        "Type": "n",
+        "Vietnamese": "Bão, giông tố (giông tố) – từ gọi chung cho các cơn bão"
+    },
+    {
+        "Topic": "3.2. Từ vựng về thời tiết",
+        "English": "Typhoon",
+        "IPA": "/taɪˈfuːn/",
+        "Type": "n",
+        "Vietnamese": "Bão, siêu bão (dùng để gọi các cơn bão ở Tây Bắc Thái Bình Dương)"
+    },
+    {
+        "Topic": "3.2. Từ vựng về thời tiết",
+        "English": "Hurricane",
+        "IPA": "/ˈhɜːrəkən/",
+        "Type": "n",
+        "Vietnamese": "Bão (dùng để gọi các cơn bão ở Đại Tây Dương / Bắc Thái Bình Dương)"
+    },
+    {
+        "Topic": "3.2. Từ vựng về thời tiết",
+        "English": "Cyclone",
+        "IPA": "/ˈsaɪkloʊn/",
+        "Type": "n",
+        "Vietnamese": "Bão (dùng để gọi các cơn bão ở Nam Bán Cầu)"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Interview",
+        "IPA": "/’intəvju:/",
+        "Type": "v",
+        "Vietnamese": "phỏng vấn"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Job",
+        "IPA": "/dʒɔb/",
+        "Type": "n",
+        "Vietnamese": "việc làm"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Appointment",
+        "IPA": "/ə’pɔintmənt/",
+        "Type": "n",
+        "Vietnamese": "buổi hẹn gặp"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Advertisement",
+        "IPA": "/ˌædvərˈtaɪzmənt/",
+        "Type": "n",
+        "Vietnamese": "quảng cáo"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Contract",
+        "IPA": "/’kɔntrækt/",
+        "Type": "n",
+        "Vietnamese": "hợp đồng"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Overtime",
+        "IPA": "/´ouvətaim/",
+        "Type": "n",
+        "Vietnamese": "ngoài giờ làm việc"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Redundancy",
+        "IPA": "/ri’dʌndənsi/",
+        "Type": "n",
+        "Vietnamese": "sự thừa nhân viên"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Redundant",
+        "IPA": "/ri’dʌndənt/",
+        "Type": "adj",
+        "Vietnamese": "bị thừa"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Part-time",
+        "IPA": "/´pa:t¸taim/",
+        "Type": "adj,adv",
+        "Vietnamese": "bán thời gian"
+    },
+    {
+        "Topic": "chủ đề nghề nghiệp",
+        "English": "Full-time",
+        "IPA": "/ˌfʊl ˈtaɪm/",
+        "Type": "adj,adv",
+        "Vietnamese": "toàn thời gian"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "overcoat",
+        "IPA": "/ˈəʊvərkəʊt/",
+        "Type": "n",
+        "Vietnamese": "áo măng tô"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "jacket",
+        "IPA": "/ˈdʒækɪt/",
+        "Type": "n",
+        "Vietnamese": "áo khoác ngắn"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "suit",
+        "IPA": "/suːt/",
+        "Type": "n",
+        "Vietnamese": "bộ com lê nam hoặc bộ vest nữ"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "shorts",
+        "IPA": "/ʃɔːrts/",
+        "Type": "n",
+        "Vietnamese": "quần soóc"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "jeans",
+        "IPA": "/dʒiːnz/",
+        "Type": "n",
+        "Vietnamese": "quần bò"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "shirt",
+        "IPA": "/ʃɜːrt/",
+        "Type": "n",
+        "Vietnamese": "áo sơ mi"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "tie",
+        "IPA": "/taɪ/",
+        "Type": "n",
+        "Vietnamese": "cà vạt"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "t-shirt",
+        "IPA": "/ˈtiː ʃɜːrt/",
+        "Type": "n",
+        "Vietnamese": "áo phông"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "raincoat",
+        "IPA": "/ˈreɪnkəʊt/",
+        "Type": "n",
+        "Vietnamese": "áo mưa"
+    },
+    {
+        "Topic": "3.4. Từ vựng về quần áo",
+        "English": "anorak",
+        "IPA": "/ˈænəræk/",
+        "Type": "n",
+        "Vietnamese": "áo khoác có mũ"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Clever",
+        "IPA": "/ˈklɛvər/",
+        "Type": "adj",
+        "Vietnamese": "Khéo léo, thông minh, lanh lợi"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Cold",
+        "IPA": "/koʊld/",
+        "Type": "adj",
+        "Vietnamese": "Lạnh lùng"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Competitive",
+        "IPA": "/kəmˈpɛtətɪv/",
+        "Type": "adj",
+        "Vietnamese": "Ganh đua, thích cạnh tranh"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Confident",
+        "IPA": "/ˈkɑnfədənt/",
+        "Type": "adj",
+        "Vietnamese": "Tự tin"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Considerate",
+        "IPA": "/kənˈsɪdərət/",
+        "Type": "adj",
+        "Vietnamese": "Chu đáo, ân cần"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Diligent",
+        "IPA": "/ˈdɪlədʒənt/",
+        "Type": "adj",
+        "Vietnamese": "Siêng năng, cần cù"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Dynamic",
+        "IPA": "/daɪˈnæmɪk/",
+        "Type": "adj",
+        "Vietnamese": "Năng động, năng nổ, sôi nổi"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Faithful",
+        "IPA": "/ˈfeɪθfl/",
+        "Type": "adj",
+        "Vietnamese": "Chung thủy, trung thành, trung thực"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Fawning",
+        "IPA": "/ˈfɔnɪŋ/",
+        "Type": "adj",
+        "Vietnamese": "Nịnh hót, xu nịnh"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Intelligent",
+        "IPA": "/ɪnˈtɛlədʒənt/",
+        "Type": "adj",
+        "Vietnamese": "Thông minh, sáng dạ"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Jealous",
+        "IPA": "/ˈdʒɛləs/",
+        "Type": "adj",
+        "Vietnamese": "Ghen ghét, ghen tị"
+    },
+    {
+        "Topic": "3.5. Từ vựng tiếng Anh về tính cách",
+        "English": "Kind",
+        "IPA": "/kaɪnd/",
+        "Type": "adj",
+        "Vietnamese": "Tốt bụng, tử tế"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Beetroot",
+        "IPA": "/ˈbiːtruːt/",
+        "Type": "n",
+        "Vietnamese": "củ cải đường"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Squash",
+        "IPA": "/skwɑːʃ/",
+        "Type": "n",
+        "Vietnamese": "bí"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Cucumber",
+        "IPA": "/ˈkjuːkʌmbər/",
+        "Type": "n",
+        "Vietnamese": "dưa chuột"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Potato",
+        "IPA": "/pəˈteɪtoʊ/",
+        "Type": "n",
+        "Vietnamese": "khoai tây"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Garlic",
+        "IPA": "/ˈɡɑːrlɪk/",
+        "Type": "n",
+        "Vietnamese": "tỏi"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Onion",
+        "IPA": "/ˈʌnjən/",
+        "Type": "n",
+        "Vietnamese": "hành"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Radish",
+        "IPA": "/ˈrædɪʃ/",
+        "Type": "n",
+        "Vietnamese": "củ cải"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Tomato",
+        "IPA": "/təˈmeɪtoʊ/",
+        "Type": "n",
+        "Vietnamese": "cà chua"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Marrow",
+        "IPA": "/ˈmæroʊ/",
+        "Type": "n",
+        "Vietnamese": "bí xanh"
+    },
+    {
+        "Topic": "3.6. Từ vựng tiếng Anh về rau củ quả",
+        "English": "Hot pepper",
+        "IPA": "/hɑːtˈpepər/",
+        "Type": "n",
+        "Vietnamese": "ớt cay"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Industrial waste",
+        "IPA": "/ɪnˈdʌstrɪəl weɪst/",
+        "Type": "n",
+        "Vietnamese": "chất thải công nghiệp"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Natural resources",
+        "IPA": "/ˈnæʧrəl rɪˈsɔːsɪz/",
+        "Type": "n",
+        "Vietnamese": "tài nguyên thiên nhiên"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Oil spill",
+        "IPA": "/ɔɪl spɪl/",
+        "Type": "n",
+        "Vietnamese": "sự cố tràn dầu"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Ozone layer",
+        "IPA": "/ˈəʊzəʊn ˈleɪə/",
+        "Type": "n",
+        "Vietnamese": "tầng ô-zôn"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Pollution",
+        "IPA": "/pəˈluːʃən/",
+        "Type": "n",
+        "Vietnamese": "sự ô nhiễm"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Preservation",
+        "IPA": "/ˌprɛzəːˈveɪʃən/",
+        "Type": "n",
+        "Vietnamese": "sự bảo tồn"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Rainforest",
+        "IPA": "/ˈreɪnˌfɒrɪst/",
+        "Type": "n",
+        "Vietnamese": "rừng nhiệt đới"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Sea level",
+        "IPA": "/siːˈlɛvl/",
+        "Type": "n",
+        "Vietnamese": "mực nước biển"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Sewage",
+        "IPA": "/ˈsjuːɪʤ/",
+        "Type": "n",
+        "Vietnamese": "nước thải"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Soil",
+        "IPA": "/sɔɪl/",
+        "Type": "n",
+        "Vietnamese": "đất"
+    },
+    {
+        "Topic": "chủ đề môi trường",
+        "English": "Solar power",
+        "IPA": "/ˈsəʊlə ˈpaʊə/",
+        "Type": "n",
+        "Vietnamese": "năng lượng mặt trời"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Lamb",
+        "IPA": "/læm/",
+        "Type": "n",
+        "Vietnamese": "Cừu con"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Herd of cow",
+        "IPA": "/hɜːd əv kaʊ/",
+        "Type": "n",
+        "Vietnamese": "Đàn bò"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Chicken",
+        "IPA": "/ˈtʃɪk.ɪn/",
+        "Type": "n",
+        "Vietnamese": "Gà"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Flock of sheep",
+        "IPA": "/flɒk əv ʃiːp/",
+        "Type": "n",
+        "Vietnamese": "Bầy cừu"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Horseshoe",
+        "IPA": "/ˈhɔːs.ʃuː/",
+        "Type": "n",
+        "Vietnamese": "Móng ngựa"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Donkey",
+        "IPA": "/ˈdɒŋ.ki/",
+        "Type": "n",
+        "Vietnamese": "Con lừa"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Piglet",
+        "IPA": "/ˈpɪg.lət/",
+        "Type": "n",
+        "Vietnamese": "Lợn con"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Female",
+        "IPA": "/ˈfiː.meɪl/",
+        "Type": "n",
+        "Vietnamese": "Giống cái"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Male",
+        "IPA": "/meɪl/",
+        "Type": "n",
+        "Vietnamese": "Giống đực"
+    },
+    {
+        "Topic": "3.8. Từ vựng tiếng Anh về con vật",
+        "English": "Horse",
+        "IPA": "/hɔːs/",
+        "Type": "n",
+        "Vietnamese": "Ngựa"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Bake",
+        "IPA": "/beɪk/",
+        "Type": "v",
+        "Vietnamese": "Nướng bánh"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Beef",
+        "IPA": "/bif/",
+        "Type": "n",
+        "Vietnamese": "Thịt bò"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Beer",
+        "IPA": "/bɪr/",
+        "Type": "n",
+        "Vietnamese": "Bia"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Boil",
+        "IPA": "/bɔɪl/",
+        "Type": "v",
+        "Vietnamese": "Luộc, đun sôi"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Bread",
+        "IPA": "/brɛd/",
+        "Type": "n",
+        "Vietnamese": "Bánh mì"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Chicken",
+        "IPA": "/ˈʧɪkən/",
+        "Type": "n",
+        "Vietnamese": "Thịt gà"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Coffee",
+        "IPA": "/ˈkɑfi/",
+        "Type": "n",
+        "Vietnamese": "Cà phê"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Delicious",
+        "IPA": "/dɪˈlɪʃəs/",
+        "Type": "adj",
+        "Vietnamese": "Ngon lành"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Drink",
+        "IPA": "/drɪŋk/",
+        "Type": "v",
+        "Vietnamese": "Uống"
+    },
+    {
+        "Topic": "chủ đề đồ ăn",
+        "English": "Eat",
+        "IPA": "/it/",
+        "Type": "v",
+        "Vietnamese": "Ăn"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Biology",
+        "IPA": "/baɪˈɑːlədʒi/",
+        "Type": "n",
+        "Vietnamese": "Sinh học"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Archaeology",
+        "IPA": "/ˌɑːrkiˈɑːlədʒi/",
+        "Type": "n",
+        "Vietnamese": "Khảo cổ học"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Math",
+        "IPA": "/mæθ/",
+        "Type": "n",
+        "Vietnamese": "Toán học"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Astronomy",
+        "IPA": "/əˈstrɑːnəmi/",
+        "Type": "n",
+        "Vietnamese": "Thiên văn học"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Physics",
+        "IPA": "/ˈfɪzɪks/",
+        "Type": "n",
+        "Vietnamese": "Vật lý"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Linguistics",
+        "IPA": "/ˈfɪzɪks/",
+        "Type": "n",
+        "Vietnamese": "Ngôn ngữ học"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Chemistry",
+        "IPA": "/ˈkemɪstri/",
+        "Type": "n",
+        "Vietnamese": "Hóa học"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Engineering",
+        "IPA": "/ˌendʒɪˈnɪrɪŋ/",
+        "Type": "n",
+        "Vietnamese": "Kỹ thuật"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Science",
+        "IPA": "/ˈsaɪəns/",
+        "Type": "n",
+        "Vietnamese": "Khoa học"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Medicine",
+        "IPA": "/ˈmedɪsn/",
+        "Type": "n",
+        "Vietnamese": "Y học"
+    },
+    {
+        "Topic": "3.10. Từ vựng về trường học",
+        "English": "Literature",
+        "IPA": "/ˈlɪtrətʃʊr/",
+        "Type": "n",
+        "Vietnamese": "Văn học"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Sleeping bag",
+        "IPA": "/ˈsliːpɪŋ baɡ/",
+        "Type": "n",
+        "Vietnamese": "túi ngủ"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Lighter",
+        "IPA": "/ˈlaɪtə/",
+        "Type": "n",
+        "Vietnamese": "bật lửa"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Tent",
+        "IPA": "/tent/",
+        "Type": "n",
+        "Vietnamese": "lều"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Penknife",
+        "IPA": "/ˈpennaɪf/",
+        "Type": "n",
+        "Vietnamese": "dao gấp"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Backpack",
+        "IPA": "/ˈbækpæk/",
+        "Type": "n",
+        "Vietnamese": "balo"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Axe",
+        "IPA": "/æks/",
+        "Type": "n",
+        "Vietnamese": "cái rìu"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Lantern",
+        "IPA": "/ˈlæntərn/",
+        "Type": "n",
+        "Vietnamese": "đèn xách tay"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Campfire",
+        "IPA": "/ˈkæmpfaɪər/",
+        "Type": "n",
+        "Vietnamese": "lửa trại"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Mat",
+        "IPA": "/mæt/",
+        "Type": "n",
+        "Vietnamese": "tấm thảm"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Barbecue",
+        "IPA": "/ˈbɑːbɪkjuː/",
+        "Type": "n",
+        "Vietnamese": "lò nướng ngoài trời"
+    },
+    {
+        "Topic": "chủ đề du lịch",
+        "English": "Folding chair",
+        "IPA": "/ˈfəʊldɪŋ ʧeə/",
+        "Type": "n",
+        "Vietnamese": "ghế gấp"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Violet",
+        "IPA": "/ˈvaɪə.lət/",
+        "Type": "adj",
+        "Vietnamese": "tím"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Purple",
+        "IPA": "/`pə:pl/",
+        "Type": "adj",
+        "Vietnamese": "màu tím"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Bright red",
+        "IPA": "/brait red/",
+        "Type": "adj",
+        "Vietnamese": "màu đỏ sáng"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Bright green",
+        "IPA": "/brait griːn/",
+        "Type": "adj",
+        "Vietnamese": "màu xanh lá cây tươi"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Bright blue",
+        "IPA": "/brait bluː/",
+        "Type": "adj",
+        "Vietnamese": "màu xanh nước biển tươi."
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Dark brown",
+        "IPA": "/dɑ:k braʊn/",
+        "Type": "adj",
+        "Vietnamese": "màu nâu đậm"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Dark green",
+        "IPA": "/dɑ:k griːn/",
+        "Type": "adj",
+        "Vietnamese": "màu xanh lá cây đậm"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Dark blue",
+        "IPA": "/dɑ:k bluː/",
+        "Type": "adj",
+        "Vietnamese": "màu xanh da trời đậm"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Light brown",
+        "IPA": "/lait braʊn/",
+        "Type": "adj",
+        "Vietnamese": "màu nâu nhạt"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Light green",
+        "IPA": "/lait griːn/",
+        "Type": "adj",
+        "Vietnamese": "màu xanh lá cây nhạt"
+    },
+    {
+        "Topic": "3.12. Từ vựng tiếng Anh về màu sắc",
+        "English": "Light blue",
+        "IPA": "/lait bluː/",
+        "Type": "adj",
+        "Vietnamese": "màu xanh da trời nhạt"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Multiplication",
+        "IPA": "/mʌltɪplɪˈkeɪʃən/",
+        "Type": "n",
+        "Vietnamese": "Phép nhân"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Numeric",
+        "IPA": "/nju(ː)ˈmɛrɪk/",
+        "Type": "n",
+        "Vietnamese": "Số học, thuộc về số học"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Operation",
+        "IPA": "/ɒpəˈreɪʃən/",
+        "Type": "n",
+        "Vietnamese": "Thao tác"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Output",
+        "IPA": "/ˈaʊtpʊt/",
+        "Type": "n",
+        "Vietnamese": "Ra, đưa ra"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Perform",
+        "IPA": "/pəˈfɔːm/",
+        "Type": "v",
+        "Vietnamese": "Tiến hành, thi hành"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Process",
+        "IPA": "/ˈprəʊsɛs/",
+        "Type": "v",
+        "Vietnamese": "Xử lý"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Processor",
+        "IPA": "/ˈprəʊsɛsə/",
+        "Type": "v",
+        "Vietnamese": "Bộ xử lý"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Pulse",
+        "IPA": "/pʌls/",
+        "Type": "n",
+        "Vietnamese": "Xung"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Register",
+        "IPA": "/ˈrɛʤɪstə/",
+        "Type": "v",
+        "Vietnamese": "Thanh ghi, đăng ký"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Signal",
+        "IPA": "/ˈsɪgnl/",
+        "Type": "n",
+        "Vietnamese": "Tín hiệu"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Solution",
+        "IPA": "/səˈluːʃən/",
+        "Type": "n",
+        "Vietnamese": "Giải pháp, lời giải"
+    },
+    {
+        "Topic": "3.13. Từ vựng tiếng Anh chuyên ngành công nghệ thông tin",
+        "English": "Store",
+        "IPA": "/stɔː/",
+        "Type": "v",
+        "Vietnamese": "Lưu trữ"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Construction in progress",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Chi phí xây dựng cơ bản dở dang"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Cost of goods sold",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Giá vốn bán hàng"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Current assets",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Tài sản lưu động và đầu tư ngắn hạn"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Current portion of long-term liabilities",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Nợ dài hạn đến hạn trả"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Deferred expenses",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Chi phí chờ kết chuyển"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Deferred revenue",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Người mua trả tiền trước"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Depreciation of fixed assets",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Hao mòn luỹ kế tài sản cố định hữu hình"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Depreciation of intangible fixed assets",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Hoa mòn luỹ kế tài sản cố định vô hình"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Depreciation of leased fixed assets",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Hao mòn luỹ kế tài sản cố định thuê tài chính"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Equity and funds",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Vốn và quỹ"
+    },
+    {
+        "Topic": "3.14. Từ vựng tiếng Anh chuyên ngành kế toán",
+        "English": "Exchange rate differences",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Chênh lệch tỷ giá"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "Learner driver",
+        "IPA": "/ˌlɜːrnər ˈdraɪvər/",
+        "Type": "n",
+        "Vietnamese": "người tập lái"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "Passenger",
+        "IPA": "/ˈpæsɪndʒər/",
+        "Type": "n",
+        "Vietnamese": "hành khách"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "to stall",
+        "IPA": "/stɔːl/",
+        "Type": "",
+        "Vietnamese": "làm chết máy"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "tyre pressure",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "áp suất lốp"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "traffic light",
+        "IPA": "/ˈtræfɪk laɪt/",
+        "Type": "n",
+        "Vietnamese": "đèn giao thông"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "speed limit",
+        "IPA": "/ˈspiːd lɪmɪt/",
+        "Type": "n",
+        "Vietnamese": "giới hạn tốc độ"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "speeding fine",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "phạt tốc độ"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "level crossing",
+        "IPA": "/ˌlevl ˈkrɔːsɪŋ/",
+        "Type": "n",
+        "Vietnamese": "đoạn đường ray giao đường cái"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "jump leads",
+        "IPA": "/ˈdʒʌmp liːd/",
+        "Type": "n",
+        "Vietnamese": "dây sạc điện"
+    },
+    {
+        "Topic": "3.15. Từ vựng về giao thông",
+        "English": "oil",
+        "IPA": "/ɔɪl/",
+        "Type": "n",
+        "Vietnamese": "dầu"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Disappointed",
+        "IPA": "/ˌdɪsəˈpɔɪntɪd/",
+        "Type": "adj",
+        "Vietnamese": "thất vọng"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Ecstatic",
+        "IPA": "/ɪkˈstætɪk/",
+        "Type": "adj",
+        "Vietnamese": "vô cùng hạnh phúc"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Enthusiastic",
+        "IPA": "/ɪnθju:zi’æstɪk/",
+        "Type": "adj",
+        "Vietnamese": "nhiệt tình"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Excited",
+        "IPA": "/Excited/",
+        "Type": "adj",
+        "Vietnamese": "phấn khích, hứng thú"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Emotional",
+        "IPA": "/ɪˈmoʊʃənl/",
+        "Type": "adj",
+        "Vietnamese": "dễ bị xúc động"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Envious",
+        "IPA": "/ˈenviəs/",
+        "Type": "adj",
+        "Vietnamese": "thèm muốn, đố kỵ"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Embarrassed",
+        "IPA": "/ɪmˈbærəst/",
+        "Type": "v",
+        "Vietnamese": "hơi xấu hổ"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Frightened",
+        "IPA": "/ˈfraɪtnd/",
+        "Type": "v",
+        "Vietnamese": "sợ hãi"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Frustrated",
+        "IPA": "/frʌ’streɪtɪd/",
+        "Type": "v",
+        "Vietnamese": "tuyệt vọng"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Furious",
+        "IPA": "/ˈfjʊriəs/",
+        "Type": "v",
+        "Vietnamese": "giận giữ, điên tiết"
+    },
+    {
+        "Topic": "3.16. Từ vựng tiếng Anh về cảm xúc",
+        "English": "Great",
+        "IPA": "/ɡreɪt/",
+        "Type": "adj",
+        "Vietnamese": "tuyệt vời"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Jackfruit",
+        "IPA": "/ˈjakˌfro͞ot/",
+        "Type": "n",
+        "Vietnamese": "Mít"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Persimmon",
+        "IPA": "/pə:’simən/",
+        "Type": "n",
+        "Vietnamese": "Hồng"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Sapodilla",
+        "IPA": "/,sæpou’dilə/",
+        "Type": "n",
+        "Vietnamese": "Sa bô chê, Hồng xiêm"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Peach",
+        "IPA": "/pi:tʃ/",
+        "Type": "n",
+        "Vietnamese": "Đào"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Pineapple",
+        "IPA": "/ˈpīˌnapəl/",
+        "Type": "n",
+        "Vietnamese": "Thơm, Dứa, Khóm"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Papaya",
+        "IPA": "/pə’paiə/",
+        "Type": "n",
+        "Vietnamese": "Đu đủ"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Dragon fruit",
+        "IPA": "/ˈdræɡən fruːt/",
+        "Type": "n",
+        "Vietnamese": "Thanh long"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Soursop",
+        "IPA": "/ˈsou(ə)rˌsäp/",
+        "Type": "n",
+        "Vietnamese": "Mãng cầu"
+    },
+    {
+        "Topic": "3.17. Từ vựng tiếng Anh về hoa quả",
+        "English": "Rambutan",
+        "IPA": "/ræm’bu:tən/",
+        "Type": "n",
+        "Vietnamese": "Chôm chôm"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Brand",
+        "IPA": "/brænd/",
+        "Type": "n",
+        "Vietnamese": "thương hiệu"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Branded",
+        "IPA": "/ˈbrændɪd/",
+        "Type": "n",
+        "Vietnamese": "Hàng hiệu"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Cost",
+        "IPA": "/kɔːst/",
+        "Type": "n",
+        "Vietnamese": "Trị giá (hàng hóa)"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Consumer",
+        "IPA": "/kənˈsuːmər/",
+        "Type": "n",
+        "Vietnamese": "Người tiêu dùng"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Consume",
+        "IPA": "/kənˈsuːm/",
+        "Type": "v",
+        "Vietnamese": "Tiêu dùng"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Costing",
+        "IPA": "/ˈkɔːstɪŋ/",
+        "Type": "n",
+        "Vietnamese": "Dự toán"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Develop",
+        "IPA": "/dɪˈveləp/",
+        "Type": "v",
+        "Vietnamese": "Sáng tạo hoặc cải tiến một sản phẩn hiện có"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Product development",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Cải tiến sản phẩm"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Distribution",
+        "IPA": "/ˌdɪstrɪˈbjuːʃn/",
+        "Type": "v",
+        "Vietnamese": "Phân phối (hàng hóa)"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "End-user",
+        "IPA": "/ˌend ˈjuːzər/",
+        "Type": "n",
+        "Vietnamese": "Người tiêu dùng hàng hóa cuối cùng"
+    },
+    {
+        "Topic": "3.18. Từ vựng chuyên ngành marketing",
+        "English": "Image",
+        "IPA": "/ˈɪmɪdʒ/",
+        "Type": "n",
+        "Vietnamese": "Hình tượng (của một công ty)"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "reception",
+        "IPA": "/ri’sep∫n/",
+        "Type": "n",
+        "Vietnamese": "lễ tân"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "health and safety",
+        "IPA": "",
+        "Type": "n",
+        "Vietnamese": "sức khỏe và sự an toàn"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "director",
+        "IPA": "/di’rektə/",
+        "Type": "n",
+        "Vietnamese": "giám đốc"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "owner",
+        "IPA": "/´ounə/",
+        "Type": "n",
+        "Vietnamese": "chủ doanh nghiệp"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "manager",
+        "IPA": "/ˈmænәdʒər/",
+        "Type": "n",
+        "Vietnamese": "người quản lý"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "boss",
+        "IPA": "/bɔs/",
+        "Type": "n",
+        "Vietnamese": "sếp"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "colleague",
+        "IPA": "/ˈkɒli:g/",
+        "Type": "n",
+        "Vietnamese": "đồng nghiệp"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "trainee",
+        "IPA": "/trei’ni:/",
+        "Type": "n",
+        "Vietnamese": "nhân viên tập sự"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "job description",
+        "IPA": "/ˈdʒɑːb dɪskrɪpʃn/",
+        "Type": "n",
+        "Vietnamese": "mô tả công việc"
+    },
+    {
+        "Topic": "chủ đề công việc",
+        "English": "department",
+        "IPA": "/di’pɑ:tmənt/",
+        "Type": "n",
+        "Vietnamese": "phòng ban"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "snow",
+        "IPA": "/snoʊ/",
+        "Type": "adj",
+        "Vietnamese": "có tuyết rơi"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "snowflake",
+        "IPA": "/ˈsnoʊ-fleɪk/",
+        "Type": "n",
+        "Vietnamese": "bông tuyết"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "pine",
+        "IPA": "/paɪn/",
+        "Type": "n",
+        "Vietnamese": "cây thông"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "candle",
+        "IPA": "/ˈkænd(ə)l/",
+        "Type": "n",
+        "Vietnamese": "cây nến"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "card",
+        "IPA": "/kɑːrd/",
+        "Type": "n",
+        "Vietnamese": "thiệp chúc mừng"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "fireplace",
+        "IPA": "/ˈfaɪr-pleɪs/",
+        "Type": "n",
+        "Vietnamese": "lò sưởi"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "firewood",
+        "IPA": "/ˈfaɪr-wʊd/",
+        "Type": "n",
+        "Vietnamese": "củi khô"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "chimney",
+        "IPA": "/ˈtʃɪm.ni/",
+        "Type": "n",
+        "Vietnamese": "ống khói"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "gift",
+        "IPA": "/ɡɪft/",
+        "Type": "n",
+        "Vietnamese": "món quà"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "present",
+        "IPA": "/ˈprɛzənt/",
+        "Type": "n",
+        "Vietnamese": "món quà"
+    },
+    {
+        "Topic": "3.20. Từ vựng về giáng sinh",
+        "English": "ribbon",
+        "IPA": "/ˈrɪb.ən/",
+        "Type": "n",
+        "Vietnamese": "nơ ruy băng"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "wallet",
+        "IPA": "/ˈwɔː.lɪt/",
+        "Type": "n",
+        "Vietnamese": "ví"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "sweatpants",
+        "IPA": "/ˈswet.pænts/",
+        "Type": "n",
+        "Vietnamese": "quần nỉ"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "sneakers",
+        "IPA": "/ˈsniː.kərz/",
+        "Type": "n",
+        "Vietnamese": "giày thể thao"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "sweatband",
+        "IPA": "/ˈswet.bænd/",
+        "Type": "n",
+        "Vietnamese": "băng đeo (đầu hoặc tay khi chơi thể thao)"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "tank top",
+        "IPA": "/tæŋk.tɒp/",
+        "Type": "n",
+        "Vietnamese": "áo ba lỗ"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "shorts",
+        "IPA": "/ʃɔːts/",
+        "Type": "n",
+        "Vietnamese": "quần đùi"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "long sleeve",
+        "IPA": "/lɒŋ sliːv/",
+        "Type": "n",
+        "Vietnamese": "áo dài tay"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "belt",
+        "IPA": "/belt/",
+        "Type": "n",
+        "Vietnamese": "thắt lưng"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "buckle",
+        "IPA": "/ˈbʌ.kļ/",
+        "Type": "n",
+        "Vietnamese": "khóa thắt lưng"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "shopping bag",
+        "IPA": "/ˈʃɒ.pɪŋ bæg/",
+        "Type": "n",
+        "Vietnamese": "túi đi chợ"
+    },
+    {
+        "Topic": "3.21. Từ vựng về thời trang",
+        "English": "sandal",
+        "IPA": "/ˈsæn.dl/",
+        "Type": "n",
+        "Vietnamese": "dép quai hậu"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "roasting pan",
+        "IPA": "/ˈrəʊ.stɪŋ pæn/",
+        "Type": "n",
+        "Vietnamese": "chảo nướng (dùng nướng thức ăn trong lò"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "dishtowel",
+        "IPA": "/dɪʃ taʊəl/",
+        "Type": "n",
+        "Vietnamese": "khăn lau bát đĩa"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "refrigerator",
+        "IPA": "/rɪˈfrɪdʒ.ər.eɪ.təʳ/",
+        "Type": "n",
+        "Vietnamese": "tủ lạnh"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "freezer",
+        "IPA": "/ˈfriː.zəʳ/",
+        "Type": "n",
+        "Vietnamese": "ngăn lạnh"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "ice tray",
+        "IPA": "/aɪs treɪ/",
+        "Type": "n",
+        "Vietnamese": "khay đá"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "cabinet",
+        "IPA": "/ˈkæb.ɪ.nət/",
+        "Type": "n",
+        "Vietnamese": "tủ nhiều ngăn"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "microwave oven",
+        "IPA": "/ˈmaɪ.krəʊ.weɪv ˈʌv.ən/",
+        "Type": "n",
+        "Vietnamese": "lò vi sóng"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "mixing bowl",
+        "IPA": "/mɪksɪŋ bəʊl/",
+        "Type": "n",
+        "Vietnamese": "bát to để trộn"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "rolling pin",
+        "IPA": "/ˈrəʊ.lɪŋ pɪn/",
+        "Type": "n",
+        "Vietnamese": "trục cán bột"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "cutting board",
+        "IPA": "/ˈkʌt.ɪŋ bɔːd/",
+        "Type": "n",
+        "Vietnamese": "thớt"
+    },
+    {
+        "Topic": "3.23. Từ vựng tiếng Anh về nhà bếp",
+        "English": "counter",
+        "IPA": "/ˈkaʊn.təʳ/",
+        "Type": "n",
+        "Vietnamese": "bề mặt chỗ nấu ăn"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "Swimming",
+        "IPA": "/ˈswɪmɪŋ/",
+        "Type": "n",
+        "Vietnamese": "bơi lội"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "Ice-skating",
+        "IPA": "/ˈaɪs skeɪt/",
+        "Type": "n",
+        "Vietnamese": "trượt băng"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "water-skiing",
+        "IPA": "/ˈwɔːtərskiːɪŋ/",
+        "Type": "n",
+        "Vietnamese": "lướt ván nước"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "Hockey",
+        "IPA": "/ˈhɑːki/",
+        "Type": "n",
+        "Vietnamese": "khúc côn cầu"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "High jump",
+        "IPA": "/ðə ˈhaɪ dʒʌmp/",
+        "Type": "n",
+        "Vietnamese": "nhảy cao"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "Snooker",
+        "IPA": "/ˈsnuːkər/",
+        "Type": "n",
+        "Vietnamese": "bi da"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "Boxing",
+        "IPA": "/ˈbɑːksɪŋ/",
+        "Type": "n",
+        "Vietnamese": "quyền anh"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "Scuba diving",
+        "IPA": "/ˈskuːbə daɪvɪŋ/",
+        "Type": "n",
+        "Vietnamese": "lặn"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "Archery",
+        "IPA": "/ˈɑːrtʃəri/",
+        "Type": "n",
+        "Vietnamese": "bắn cung"
+    },
+    {
+        "Topic": "3.24. Từ vựng về các môn thể thao",
+        "English": "Windsurfing",
+        "IPA": "/ˈwɪndsɜːrfɪŋ/",
+        "Type": "n",
+        "Vietnamese": "lướt sóng"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Anchovy",
+        "IPA": "/ˈæntʃoʊvi/",
+        "Type": "n",
+        "Vietnamese": "cá cơm"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Carp",
+        "IPA": "/kɑːrp/",
+        "Type": "n",
+        "Vietnamese": "cá chép"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Codfish",
+        "IPA": "/ˈkɑːdfɪʃ/",
+        "Type": "n",
+        "Vietnamese": "cá thu"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Goby",
+        "IPA": "/ˈɡoʊbi/",
+        "Type": "n",
+        "Vietnamese": "cá bồng"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Herring",
+        "IPA": "/ˈherɪŋ/",
+        "Type": "n",
+        "Vietnamese": "cá trích"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Tuna-fish",
+        "IPA": "/’tju:nə fi∫/",
+        "Type": "n",
+        "Vietnamese": "cá ngừ đại dương"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Eel",
+        "IPA": "/iːl/",
+        "Type": "n",
+        "Vietnamese": "lươn"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Shrimp",
+        "IPA": "/ʃrɪmp/",
+        "Type": "n",
+        "Vietnamese": "tôm"
+    },
+    {
+        "Topic": "3.25. Từ vựng về thực phẩm",
+        "English": "Crab",
+        "IPA": "/kræb/",
+        "Type": "n",
+        "Vietnamese": "cua"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Aggressive",
+        "IPA": "/əˈɡrɛsɪv/",
+        "Type": "adj",
+        "Vietnamese": "Hung hăng, năng nổ"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Ambitious",
+        "IPA": "/æmˈbɪʃəs/",
+        "Type": "adj",
+        "Vietnamese": "Tham vọng"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Artful",
+        "IPA": "/ˈɑrtfl/",
+        "Type": "adj",
+        "Vietnamese": "Xảo quyệt, tinh ranh"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Bad-tempered",
+        "IPA": "/ˌbæd ˈtempərd/",
+        "Type": "adj",
+        "Vietnamese": "Nóng tính"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Boastful",
+        "IPA": "/ˈboʊstfl/",
+        "Type": "adj",
+        "Vietnamese": "Khoe khoang, khoác lác"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Boring",
+        "IPA": "/ˈbɔrɪŋ/",
+        "Type": "adj",
+        "Vietnamese": "Nhàm chán, chán nản"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Bossy",
+        "IPA": "/ˈbɔsi/",
+        "Type": "adj",
+        "Vietnamese": "Hống hách, hách dịch"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Brave",
+        "IPA": "/breɪv/",
+        "Type": "adj",
+        "Vietnamese": "Dũng cảm, gan dạ"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Calm",
+        "IPA": "/kɑm/",
+        "Type": "adj",
+        "Vietnamese": "Điềm tĩnh"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Careful",
+        "IPA": "/ˈkɛrfl/",
+        "Type": "adj",
+        "Vietnamese": "Cẩn thận, kỹ lưỡng"
+    },
+    {
+        "Topic": "3.26. Từ vựng tiếng Anh miêu tả người",
+        "English": "Careless",
+        "IPA": "/ˈkɛrləs/",
+        "Type": "adj",
+        "Vietnamese": "Bất cẩn, cẩu thả"
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "Actus reus",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Khách quan của tội phạm"
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "Bail",
+        "IPA": "/beɪl/",
+        "Type": "n",
+        "Vietnamese": "Tiền bảo lãnh"
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "Bench trial",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Phiên xét xử bởi thẩm phán"
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "Commit",
+        "IPA": "/kəˈmɪt/",
+        "Type": "v",
+        "Vietnamese": "phạm (tội, lỗi). Phạm tội"
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "Crime",
+        "IPA": "/kraɪm/",
+        "Type": "n",
+        "Vietnamese": "tội phạm"
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "Damages",
+        "IPA": "/ˈdæmɪdʒ/",
+        "Type": "n",
+        "Vietnamese": "Khoản đền bù thiệt hại"
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "Defendant",
+        "IPA": "/dɪˈfendənt/",
+        "Type": "n",
+        "Vietnamese": "bị cáo."
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "Grand jury",
+        "IPA": "/ˌɡrænd ˈdʒʊri/",
+        "Type": "n",
+        "Vietnamese": "Bồi thẩm đoàn"
+    },
+    {
+        "Topic": "3.27. Từ vựng tiếng Anh chuyên ngành luật",
+        "English": "General Election",
+        "IPA": "/ˌdʒenrəl ɪˈlekʃn/",
+        "Type": "n",
+        "Vietnamese": "Tổng Tuyển Cử"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "VietNam",
+        "IPA": "/ˌvjɛtˈnɑːm/",
+        "Type": "",
+        "Vietnamese": "Việt Nam"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "England",
+        "IPA": "/ˈɪŋglənd/",
+        "Type": "",
+        "Vietnamese": "Anh"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "ThaiLand",
+        "IPA": "/ˈtaɪlænd/",
+        "Type": "",
+        "Vietnamese": "Thái Lan"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "India",
+        "IPA": "/ˈɪndɪə/",
+        "Type": "",
+        "Vietnamese": "Ấn Độ"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "Singapore",
+        "IPA": "/sɪŋgəˈpɔː/",
+        "Type": "",
+        "Vietnamese": "Singapore"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "China",
+        "IPA": "/ˈʧaɪnə/",
+        "Type": "",
+        "Vietnamese": "Trung Quốc"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "Japan",
+        "IPA": "/ʤəˈpæn/",
+        "Type": "",
+        "Vietnamese": "Nhật Bản"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "Combodia",
+        "IPA": "/Combodia/",
+        "Type": "",
+        "Vietnamese": "Campuchia"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "Cuba",
+        "IPA": "/ˈkjuːbə/",
+        "Type": "",
+        "Vietnamese": "Cu Ba"
+    },
+    {
+        "Topic": "3.28. Từ vựng về quốc gia",
+        "English": "France",
+        "IPA": "/ˈfrɑːns/",
+        "Type": "",
+        "Vietnamese": "Pháp"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Butterfly",
+        "IPA": "/ˈbʌt.ə.flaɪ/",
+        "Type": "n",
+        "Vietnamese": "bướm"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Moth",
+        "IPA": "/mɒθ/",
+        "Type": "n",
+        "Vietnamese": "bướm đêm, sâu bướm"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Caterpillar",
+        "IPA": "/ˈkæt.ə.pɪl.əʳ/",
+        "Type": "n",
+        "Vietnamese": "sâu bướm"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Giant water bug",
+        "IPA": "/ˈdʒaɪənt ˈwɔːtə bʌɡ/",
+        "Type": "n",
+        "Vietnamese": "cà cuống"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Stink bug",
+        "IPA": "/stɪŋk bʌɡ/",
+        "Type": "n",
+        "Vietnamese": "bọ xít"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Cicada",
+        "IPA": "/səˈkɑːdə/",
+        "Type": "n",
+        "Vietnamese": "ve sầu"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Cockroach",
+        "IPA": "/ˈkɒk.rəʊtʃ/",
+        "Type": "n",
+        "Vietnamese": "con gián"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Cricket",
+        "IPA": "/ˈkrɪk.ɪt/",
+        "Type": "n",
+        "Vietnamese": "con dế"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Dragonfly",
+        "IPA": "/ˈdrægən flaɪ/",
+        "Type": "n",
+        "Vietnamese": "chuồn chuồn"
+    },
+    {
+        "Topic": "3.29. Từ vựng tiếng Anh về côn trùng",
+        "English": "Damselfly",
+        "IPA": "/ˈdæmzəl flaɪ/",
+        "Type": "n",
+        "Vietnamese": "chuồn chuồn kim"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Defense line",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "phòng tuyến"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Declassification",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "làm mất tính bí mật/ tiết lộ bí mật"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Drill",
+        "IPA": "/drɪl/",
+        "Type": "n",
+        "Vietnamese": "sự tập luyện"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Drill-ground",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "bãi tập, thao trường"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Drill-sergeant",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "hạ sĩ quan huấn luyện"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Drumfire",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "loạt đại bác bắn liên hồi (chuẩn bị cho cuộc tấn công của bộ binh)"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Drumhead court martial",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "phiên toà quân sự bất thường (ở mặt trận)"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Front lines",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "tiền tuyến"
+    },
+    {
+        "Topic": "3.30. Từ vựng tiếng Anh về quân đội",
+        "English": "Factions and parties",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "phe phái"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "CM",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Centre midfielder : Trung tâm"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "DM",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Defensive midfielder : Phòng ngự"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "Winger",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Tiền vệ chạy cánh(ko phải đá bên cánh)"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "Deep-lying playmaker",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "DM phát động tấn công"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "Striker",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Tiền đạo cắm"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "Forwards",
+        "IPA": "",
+        "Type": "Left, Right, Center",
+        "Vietnamese": "Tiền đạo hộ công"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "Fullback",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Cầu thủ có thể chơi mọi vị trí ở hang phòng ngự"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "Sweeper",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Hậu vệ quét"
+    },
+    {
+        "Topic": "3.31. Từ vựng về bóng đá",
+        "English": "Goalkeeper",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Thủ môn"
+    },
+    {
+        "Topic": "chủ đề cửa hàng",
+        "English": "Flea market",
+        "IPA": "/ˈfliː mɑːrkɪt/",
+        "Type": "n",
+        "Vietnamese": "Chợ trời"
+    },
+    {
+        "Topic": "chủ đề cửa hàng",
+        "English": "Greengrocer",
+        "IPA": "/ˈɡriːnɡrəʊsər/",
+        "Type": "n",
+        "Vietnamese": "Cửa hàng rau củ"
+    },
+    {
+        "Topic": "chủ đề cửa hàng",
+        "English": "Market",
+        "IPA": "/ˈmɑːrkɪt/",
+        "Type": "n",
+        "Vietnamese": "Chợ"
+    },
+    {
+        "Topic": "chủ đề cửa hàng",
+        "English": "Newsagent",
+        "IPA": "/ˈnuːzeɪdʒənt/",
+        "Type": "n",
+        "Vietnamese": "Sạp báo (nhà phát hành báo)"
+    },
+    {
+        "Topic": "chủ đề cửa hàng",
+        "English": "Optician",
+        "IPA": "/ɑːpˈtɪʃn/",
+        "Type": "n",
+        "Vietnamese": "Hiệu kính mắt"
+    },
+    {
+        "Topic": "chủ đề cửa hàng",
+        "English": "Petshop",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "Hiệu thú nuôi"
+    },
+    {
+        "Topic": "chủ đề cửa hàng",
+        "English": "Pharmacy",
+        "IPA": "",
+        "Type": "us",
+        "Vietnamese": "Hiệu thuốc"
+    },
+    {
+        "Topic": "chủ đề cửa hàng",
+        "English": "Stationer",
+        "IPA": "/ˈsteɪʃənər/",
+        "Type": "n",
+        "Vietnamese": "Cửa hàng văn phòng phẩm"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "Hill",
+        "IPA": "/hɪl/",
+        "Type": "n",
+        "Vietnamese": "Đồi"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "Forest",
+        "IPA": "/ˈfɔːrɪst/",
+        "Type": "n",
+        "Vietnamese": "rừng"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "Mountain",
+        "IPA": "/ˈmaʊntn/",
+        "Type": "n",
+        "Vietnamese": "núi"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "River",
+        "IPA": "/ˈrɪvər/",
+        "Type": "n",
+        "Vietnamese": "sông"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "Port",
+        "IPA": "/pɔːrt/",
+        "Type": "n",
+        "Vietnamese": "Cảng"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "Lake",
+        "IPA": "/leɪk/",
+        "Type": "n",
+        "Vietnamese": "Hồ"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "Sea",
+        "IPA": "/siː/",
+        "Type": "n",
+        "Vietnamese": "Biển"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "Sand",
+        "IPA": "/sænd/",
+        "Type": "n",
+        "Vietnamese": "Cát"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "Valley",
+        "IPA": "/ˈvæli/",
+        "Type": "n",
+        "Vietnamese": "thung lũng"
+    },
+    {
+        "Topic": "3.33. Từ vựng tiếng Anh về quê hương",
+        "English": "https",
+        "IPA": "",
+        "Type": "",
+        "Vietnamese": "//www.tuhocielts.vn"
+    }
+]

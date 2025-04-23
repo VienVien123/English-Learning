@@ -4,22 +4,23 @@ const API_URL = '/api/auth';
 // Login function
 async function login(username, password) {
     try {
-        const response = await fetch('/login/', {
+        const response = await fetch(`${API_URL}/login/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRFToken': getCookie('csrftoken')
             },
             body: JSON.stringify({ username, password }),
-            credentials: 'include'
         });
 
         const data = await response.json();
         
         if (response.ok) {
+            // Store token in localStorage
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('user', JSON.stringify(data.user));
             return data;
         } else {
-            throw new Error(data.message || 'Login failed');
+            throw new Error(data.error || 'Login failed');
         }
     } catch (error) {
         console.error('Login error:', error);
@@ -30,22 +31,23 @@ async function login(username, password) {
 // Register function
 async function register(userData) {
     try {
-        const response = await fetch('/register/', {
+        const response = await fetch(`${API_URL}/registration/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-CSRFToken': getCookie('csrftoken')
             },
             body: JSON.stringify(userData),
-            credentials: 'include'
         });
 
         const data = await response.json();
         
         if (response.ok) {
+            // Store token in localStorage
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('user', JSON.stringify(data.user));
             return data;
         } else {
-            throw new Error(data.message || 'Registration failed');
+            throw new Error(data.error || 'Registration failed');
         }
     } catch (error) {
         console.error('Registration error:', error);
@@ -56,20 +58,24 @@ async function register(userData) {
 // Logout function
 async function logout() {
     try {
-        const response = await fetch('/logout/', {
+        const token = localStorage.getItem('token');
+        if (!token) return;
+
+        const response = await fetch(`${API_URL}/logout/`, {
             method: 'POST',
             headers: {
+                'Authorization': `Token ${token}`,
                 'Content-Type': 'application/json',
-                'X-CSRFToken': getCookie('csrftoken')
             },
-            credentials: 'include'
         });
 
-        if (!response.ok) {
+        if (response.ok) {
+            // Clear localStorage
+            localStorage.removeItem('token');
+            localStorage.removeItem('user');
+        } else {
             throw new Error('Logout failed');
         }
-
-        return await response.json();
     } catch (error) {
         console.error('Logout error:', error);
         throw error;
@@ -77,48 +83,23 @@ async function logout() {
 }
 
 // Check if user is authenticated
-async function isAuthenticated() {
-    try {
-        const response = await fetch(`${API_URL}/status/`, {
-            credentials: 'include'
-        });
-        return response.ok;
-    } catch (error) {
-        console.error('Auth check error:', error);
-        return false;
-    }
+function isAuthenticated() {
+    return !!localStorage.getItem('token');
 }
 
 // Get current user
-async function getCurrentUser() {
-    try {
-        const response = await fetch(`${API_URL}/status/`, {
-            credentials: 'include'
-        });
-        if (response.ok) {
-            return await response.json();
-        }
-        return null;
-    } catch (error) {
-        console.error('Get user error:', error);
-        return null;
-    }
+function getCurrentUser() {
+    const userStr = localStorage.getItem('user');
+    return userStr ? JSON.parse(userStr) : null;
 }
 
-// Helper function to get CSRF token from cookies
-function getCookie(name) {
-    let cookieValue = null;
-    if (document.cookie && document.cookie !== '') {
-        const cookies = document.cookie.split(';');
-        for (let i = 0; i < cookies.length; i++) {
-            const cookie = cookies[i].trim();
-            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                break;
-            }
-        }
-    }
-    return cookieValue;
+// Add token to all API requests
+function getAuthHeaders() {
+    const token = localStorage.getItem('token');
+    return {
+        'Authorization': `Token ${token}`,
+        'Content-Type': 'application/json',
+    };
 }
 
 // Export functions
@@ -127,5 +108,6 @@ export {
     register,
     logout,
     isAuthenticated,
-    getCurrentUser
+    getCurrentUser,
+    getAuthHeaders
 }; 
