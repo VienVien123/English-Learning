@@ -1,55 +1,142 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Learning Topics - English Learning Platform{% endblock %}
-
 {% block content %}
-<!-- Topics Header -->
-<section class="bg-light py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h1 class="display-4 fw-bold mb-4">Learning Topics</h1>
-                <p class="lead mb-4">Explore our comprehensive collection of English learning topics, designed to help you improve your language skills at your own pace.</p>
+<div class="container mt-5">
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-4" id="vocabularyTabs" role="tablist">
+        <li class="nav-item">
+            <button class="nav-link active" id="my-vocab-tab" data-bs-toggle="tab" data-bs-target="#my-vocab" type="button">
+                Từ vựng của tôi
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="topics-tab" data-bs-toggle="tab" data-bs-target="#topics" type="button">
+                Học theo chủ đề
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <!-- Tab 1: My Vocabulary -->
+        <div class="tab-pane fade show active" id="my-vocab">
+            {% if user.is_authenticated %}
+            <div class="mb-4">
+                <button class="btn btn-primary">+ Thêm từ mới</button>
+            </div>
+            <div id="myWordsGrid" class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Từ user sẽ fetch từ Supabase -->
+            </div>
+            {% else %}
+            <div class="alert alert-warning">
+                <p>Vui lòng đăng nhập để xem từ của bạn.</p>
+                <a href="{% url 'login' %}" class="btn btn-primary">Đăng nhập</a>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Tab 2: Topics -->
+        <div class="tab-pane fade" id="topics">
+            <div id="supabaseTopicsGrid" class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- JS sẽ tạo card chủ đề -->
             </div>
         </div>
     </div>
-</section>
+</div>
+{% endblock %}
 
-<!-- Topics Grid -->
-<section class="py-5">
-    <div class="container">
-        <div class="row g-4">
-            {% for topic in topics %}
-            <div class="col-md-6 col-lg-4">
-                <div class="card topic-card h-100">
-                    <div class="card-img-top" style="height: 200px; background-image: url('{{ topic.image }}'); background-size: cover; background-position: center;"></div>
-                    <div class="card-body">
-                        <h3 class="card-title h4">{{ topic.title }}</h3>
-                        <p class="card-text">{{ topic.description }}</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="badge bg-primary">{{ topic.level }}</span>
-                            <button class="btn btn-outline-primary">Start Learning</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const SUPABASE_URL = "{{ SUPABASE_URL }}";
+    const SUPABASE_API_KEY = "{{ SUPABASE_API_KEY }}";
 
-<!-- CTA Section -->
-<section class="bg-primary text-white py-5">
-    <div class="container text-center">
-        <h2 class="mb-4">Ready to Start Learning?</h2>
-        <p class="lead mb-4">Choose a topic and begin your English learning journey today.</p>
-        {% if not user.is_authenticated %}
-        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-            <a href="{% url 'register' %}" class="btn btn-light btn-lg px-4">Create Account</a>
-            <a href="{% url 'login' %}" class="btn btn-outline-light btn-lg px-4">Login</a>
-        </div>
-        {% endif %}
-    </div>
-</section>
-{% endblock %} 
+    console.log("✅ SUPABASE_URL:", SUPABASE_URL);
+    console.log("✅ SUPABASE_API_KEY:", SUPABASE_API_KEY);
+
+    const container = document.getElementById('supabaseTopicsGrid');
+    container.innerHTML = '';
+
+    // 🔁 Lấy danh sách chủ đề
+    fetch(`${SUPABASE_URL}/rest/v1/learning_topic?select=topic&distinct=topic`, {
+        headers: {
+            apikey: SUPABASE_API_KEY,
+            Authorization: `Bearer ${SUPABASE_API_KEY}`
+        }
+    })
+    .then(res => res.json())
+    .then(topics => {
+        topics.forEach(row => {
+            const topic = row.topic;
+
+            const col = document.createElement('div');
+            col.className = 'col';
+
+            const card = document.createElement('div');
+            card.className = 'card shadow-sm h-100';
+
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card-body';
+
+            const topicTitle = document.createElement('h5');
+            topicTitle.className = 'card-title text-primary fw-bold';
+            topicTitle.textContent = topic;
+
+            const viewBtn = document.createElement('button');
+            viewBtn.className = 'btn btn-outline-primary btn-sm mt-2';
+            viewBtn.textContent = 'Xem từ vựng';
+            viewBtn.onclick = () => loadWordsFromSupabase(topic, cardBody);
+
+            cardBody.appendChild(topicTitle);
+            cardBody.appendChild(viewBtn);
+            card.appendChild(cardBody);
+            col.appendChild(card);
+            container.appendChild(col);
+        });
+    })
+    .catch(err => {
+        console.error("Lỗi lấy danh sách topic:", err);
+        alert("Không thể tải danh sách chủ đề.");
+    });
+
+    // 🔍 Lấy từ vựng theo chủ đề
+    function loadWordsFromSupabase(topic, container) {
+        const url = `${SUPABASE_URL}/rest/v1/learning_topic?select=english,ipa,type,vietnamese&topic=eq.${encodeURIComponent(topic)}`;
+
+        fetch(url, {
+            headers: {
+                apikey: SUPABASE_API_KEY,
+                Authorization: `Bearer ${SUPABASE_API_KEY}`
+            }
+        })
+        .then(res => res.json())
+        .then(data => {
+            const wordList = document.createElement('div');
+            wordList.className = 'mt-3';
+
+            if (data.length === 0) {
+                wordList.innerHTML = `<div class="alert alert-secondary">Không có từ nào.</div>`;
+            }
+
+            data.forEach(word => {
+                const wordBlock = document.createElement('div');
+                wordBlock.className = 'mb-2 p-2 border rounded bg-light';
+                wordBlock.innerHTML = `
+                    <strong>${word.english}</strong> - ${word.vietnamese}<br>
+                    <small><i>${word.ipa || ''} | ${word.type || ''}</i></small>
+                `;
+                wordList.appendChild(wordBlock);
+            });
+
+            const old = container.querySelector('.mt-3');
+            if (old) old.remove();
+            container.appendChild(wordList);
+        })
+        .catch(err => {
+            console.error("Lỗi gọi Supabase:", err);
+            alert("Không thể tải từ vựng.");
+        });
+    }
+});
+</script>
+{% endblock %}
